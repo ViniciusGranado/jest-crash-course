@@ -19,3 +19,12 @@ test('Should be null', () => {
 test('Should be falsy', () => {
   expect(functions.checkValue(null)).toBeFalsy();
 })
+
+// Equal to object
+test('Should be Vinicius Granado object', () => {
+  expect(functions.createUser()).toEqual({
+    firstName: 'Vinicius',
+    lastName: 'Granado',
+    test: undefined,
+  });
+});
